@@ -1,3 +1,10 @@
+# Merge Sort is a divide-and-conquer sorting method.
+# It recursively splits the array into halves until each subarray has a single element,
+# then merges these subarrays back together in a sorted manner.
+
+# Time complexity: O(nlogn)
+# Space complexity: O(n), due to the additional temporary arrays used for merging.
+
 def mergeSort(array, start, end):
     if start < end:
         mid = (start + end) //2
@@ -35,4 +42,4 @@ def merge(array, start, mid, end):
         array[start + leftPointer + rightPointer] = right[rightPointer]
         rightPointer += 1
 
-print(mergeSort([9,8,7,6], 0, 3))
+# e.g: print(mergeSort([9,8,7,6], 0, 3))

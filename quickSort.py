@@ -1,3 +1,10 @@
+# Quick Sort is an efficient and widely used sorting method.
+# It selects a pivot element and partitions the array into subarrays of elements
+# less than and greater than the pivot, then recursively sorts the subarrays.
+
+# Time complexity: O(nlogn)
+# Space complexity: O(logn), due to the recursive stack usage.
+
 import random
 
 def quickSort(array, start, end):
@@ -20,4 +27,4 @@ def partition(array, start, end):
     array[start], array[p-1] = array[p-1], array[start]
     return p-1
 
-print(quickSort([9,8,7,6,5,4,2,3,1], 0, 8))
+# e.g: print(quickSort([9,8,7,6,5,4,2,3,1], 0, 8))

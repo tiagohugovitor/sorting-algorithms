@@ -1,3 +1,11 @@
+# Heap Sort is an efficient sorting method based on the Heap data structure.
+# It builds a max heap from the input array and then repeatedly extracts the largest
+# element from the heap (the root) and places it in its correct position in the array.
+# This process is repeated until the entire array is sorted.
+
+# Time Complexity: O(nlogn)
+# Space Complexity: O(1), in place
+
 def parent(index):
     return (index - 1) // 2
 
@@ -33,4 +41,4 @@ def heapSort(array):
         fixMaxHeap(array, heapSize, 0)
     return array
 
-print(heapSort([9,7,6,4,3]))
+# e.g: print(heapSort([9,7,6,4,3]))
